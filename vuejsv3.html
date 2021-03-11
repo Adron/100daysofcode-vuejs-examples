@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+  <a href="index.html">home</a>
+  
+  <div id="counter">
+    Counter: {{ counter }}
+  </div>
+  <div id="counter2">
+    Counter: {{ counter2 }}
+  </div>
+  <div id="bind-attribute">
+    <span :title="message">
+      Hover your mouse over me for a few seconds to see my dynamically bound
+      title!
+    </span>
+  </div>
+  
+  <div id="coreApp">
+    <p>{{ helloMessage }}</p>
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+    <span :title="pageLoadMessage">
+        Hover your mouse to get the page loaded at time!
+      </span>
+  </div>
+  
+  <script src="vuejsv3.js"></script>
+</body>
+</html>
